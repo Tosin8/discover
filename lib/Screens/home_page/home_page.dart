@@ -17,16 +17,23 @@ class _HomePageState extends State<HomePage> {
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 20),
         child: Container(
+            color: kBackgroundColor,
             child: ListView(
-          children: const [
-            Text(
-              'Discover',
-              textAlign: TextAlign.center,
-              style: kHeading,
-            ),
-            Text('Daily dose of illustrations\n for you'),
-          ],
-        )),
+              children: const [
+                Text(
+                  'Discover',
+                  textAlign: TextAlign.center,
+                  style: kHeading,
+                ),
+                SizedBox(height: 10),
+                Padding(
+                    padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                    child: Text(
+                      'Daily dose of illustrations\n for you',
+                      style: kSubHeading,
+                    )),
+              ],
+            )),
       ),
     );
   }

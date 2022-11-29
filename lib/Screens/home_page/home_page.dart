@@ -14,9 +14,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const Drawer(),
-      appBar: AppBar(),
-      body: Padding(
+      
+      body: Paddi(
         padding: const EdgeInsets.symmetric(vertical: 20),
         child: Container(
             color: kBackgroundColor,

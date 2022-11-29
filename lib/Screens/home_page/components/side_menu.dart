@@ -23,7 +23,7 @@ class _SideMenuState extends State<SideMenu> {
               Container(
                 decoration: const BoxDecoration(
                     shape: BoxShape.circle, color: Colors.white),
-                child: const Icon(Icons.person_off),
+                child: const Icon(Icons.person_off, color: Colors.blue),
               ),
               const Text(
                 'Tosin Ezekiel',
@@ -55,6 +55,15 @@ class _SideMenuState extends State<SideMenu> {
             leading: const Icon(Icons.location_city),
             onTap: () => print("Location is pressed"),
           ),
+          const Spacer(flex: 2),
+          Row(
+            children: const [
+              Icon(Icons.settings),
+              Divider(),
+              Text('Logout'),
+            ],
+          ),
+          const SizedBox(),
         ],
       ),
     );

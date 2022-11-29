@@ -46,9 +46,14 @@ class _SideMenuState extends State<SideMenu> {
             onTap: () => print("Trending is pressed"),
           ),
           ListTile(
-            title: const Text('Home'),
-            leading: const Icon(Icons.home),
-            onTap: () => print("Home is pressed"),
+            title: const Text('Cloud'),
+            leading: const Icon(Icons.cloud),
+            onTap: () => print("Cloud is pressed"),
+          ),
+          ListTile(
+            title: const Text('Location'),
+            leading: const Icon(Icons.location_city),
+            onTap: () => print("Location is pressed"),
           ),
         ],
       ),

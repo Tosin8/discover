@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../Widgets/constants.dart';
+
 class SideMenu extends StatefulWidget {
   const SideMenu({super.key});
 
@@ -10,6 +12,10 @@ class SideMenu extends StatefulWidget {
 class _SideMenuState extends State<SideMenu> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      decoration: const BoxDecoration(
+        gradient: kBkgColorSide,
+      ),
+    );
   }
 }

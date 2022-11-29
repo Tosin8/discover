@@ -10,3 +10,8 @@ const kHeading =
 const kSubHeading = TextStyle(color: kPrimaryColor, fontSize: 18);
 
 const kBackgroundColor = Color(0xFFFAFAFA);
+
+const kBkgColorSide = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [Color(0xFF6A1B9A), Color(0xFF424242)]);

@@ -31,6 +31,20 @@ class MainMenu extends StatelessWidget {
               const SizedBox(height: 10),
               Container(
                   color: const Color(0xFFF5F5F5),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Colors.grey,
+                        blurRadius: 25.0, // soften the shadow
+                        spreadRadius: 5.0, //extend the shadow
+                        offset: Offset(
+                          15.0, // Move to right 10  horizontally
+                          15.0, // Move to bottom 10 Vertically
+                        ),
+                      )
+                    ],
+                  ),
                   child: Form(child: TextFormField())),
               const Body_HomePage(),
             ],

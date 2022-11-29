@@ -16,7 +16,25 @@ class _SideMenuState extends State<SideMenu> {
       decoration: const BoxDecoration(
         gradient: kBkgColorSide,
       ),
-      child: ListView(),
+      child: ListView(
+        children: [
+          Row(
+            children: [
+              Container(
+                decoration: const BoxDecoration(
+                    shape: BoxShape.circle, color: Colors.white),
+                child: const Icon(Icons.person_off),
+              ),
+              const Text(
+                'Tosin Ezekiel',
+                style: TextStyle(color: kSecondaryColor),
+              )
+            ],
+          ),
+          const SizedBox(height: 30),
+          const ListTile(),
+        ],
+      ),
     );
   }
 }

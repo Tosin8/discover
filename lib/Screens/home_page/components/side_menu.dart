@@ -32,7 +32,24 @@ class _SideMenuState extends State<SideMenu> {
             ],
           ),
           const SizedBox(height: 30),
-          const ListTile(),
+          ListTile(
+            title: const Text('Home'),
+            // isThreeLine: true,
+            //subtitle: const Text('Secondary text\nTertiary text'),
+            leading: const Icon(Icons.home),
+            //trailing: const Text('Metadata'),
+            onTap: () => print("Home is pressed"),
+          ),
+          ListTile(
+            title: const Text('Trending'),
+            leading: const Icon(Icons.auto_graph),
+            onTap: () => print("Trending is pressed"),
+          ),
+          ListTile(
+            title: const Text('Home'),
+            leading: const Icon(Icons.home),
+            onTap: () => print("Home is pressed"),
+          ),
         ],
       ),
     );

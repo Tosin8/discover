@@ -16,6 +16,7 @@ class _SideMenuState extends State<SideMenu> {
       decoration: const BoxDecoration(
         gradient: kBkgColorSide,
       ),
+      child: ListView(),
     );
   }
 }

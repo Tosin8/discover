@@ -23,7 +23,7 @@ class _Body_HomePageState extends State<Body_HomePage> {
               shadowColor: Colors.grey,
               child: Column(
                 children: [
-                  Image.asset('', height: 10),
+                  Image.asset('1.jpg', height: 10),
                   Container(
                       color: Colors.white,
                       child: Row(
